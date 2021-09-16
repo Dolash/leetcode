@@ -50,5 +50,32 @@ public class Main {
         System.out.println("Received output: " + testmsa881[0] + ", " + testmsa881[1] + ", " + testmsa881[2] + ", " + testmsa881[3] + ", " + testmsa881[4]);
         System.out.println("========================");
 
+        //350. Intersection of Two Arrays II
+        System.out.println("#350 - Intersection of Two Arrays II");
+        IntersectionOfTwoArraysII350 iotaii350 = new IntersectionOfTwoArraysII350();
+        System.out.println("Test values: [0, 3, 2, 4, 2, 3], [1, 2, 2]");
+        int[] testiotaii3501 = {0, 3, 2, 4, 2, 3};
+        int[] testiotaii3502 = {1, 2, 2};
+        System.out.println("Expected output: 2, 2");
+        int[] resultiotaii350 = iotaii350.intersect(testiotaii3501, testiotaii3502);
+        System.out.print("Received output: ");
+        for (int i = 0; i < resultiotaii350.length; i++)
+        {
+            System.out.print(resultiotaii350[i] + ", ");
+        }
+        System.out.println();
+        System.out.println("========================");
+
+        //121. Best Time To Buy And Sell Stock
+        System.out.println("#121 - Best Time To Buy And Sell Stock");
+        BestTimeToBuyAndSellStock121 bttbass121 = new BestTimeToBuyAndSellStock121();
+        System.out.println("Test values: [7, 1, 5, 3, 6, 4]");
+        int[] testbttbass121 = {7, 1, 5, 3, 6, 4};
+        System.out.println("Expected output: 5");
+        int resultbttbass121 = bttbass121.maxProfit(testbttbass121);
+        System.out.println("Received output: " + resultbttbass121);
+        System.out.println("========================");
+
+
     }
 }
