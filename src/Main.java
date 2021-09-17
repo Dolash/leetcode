@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args)
@@ -76,6 +77,49 @@ public class Main {
         System.out.println("Received output: " + resultbttbass121);
         System.out.println("========================");
 
+        //566. Reshape The Matrix
+        System.out.println("#566 - Reshape The Matrix");
+        ReshapeTheMatrix566 rtm566 = new ReshapeTheMatrix566();
+        System.out.println("Test values: [[1, 2,] [3, 4]], 1, 4");
+        int[][] testrtm566 = {{1, 2}, {3, 4}};
+        int testrtm566r = 1;
+        int testrtm566c = 4;
+        System.out.println("Expected output: [1, 2, 3, 4]");
+        int[][] resultrtm566 = rtm566.matrixReshape(testrtm566, testrtm566r, testrtm566c);
+        System.out.println("Received output: ");
+        for (int i = 0; i < resultrtm566.length; i++)
+        {
+            System.out.print("[");
+            for (int j = 0; j < resultrtm566[i].length; j++)
+            {
+                System.out.print(resultrtm566[i][j] + " ");
+            }
+            System.out.println("]");
+        }
+        System.out.println("========================");
 
+        //118. Pascal's Triangle
+        System.out.println("#118 - Pascal's Triangle");
+        PascalsTriangle118 pt118 = new PascalsTriangle118();
+        System.out.println("Test value: 5");
+        int testpt118 = 5;
+        System.out.println("Expected output: [[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1]]");
+        List<List<Integer>> resultpt118 = pt118.generate(testpt118);
+        System.out.println("Received output: ");
+        System.out.println("[");
+        for (int i = 0; i < resultpt118.size(); i++)
+        {
+            System.out.print("[");
+            for (int j = 0; j < resultpt118.get(i).size(); j++)
+            {
+                System.out.print(resultpt118.get(i).get(j) + " ");
+            }
+            System.out.println("]");
+            if (i == resultpt118.size() - 1)
+            {
+                System.out.println("]");
+            }
+        }
+        System.out.println("========================");
     }
 }
