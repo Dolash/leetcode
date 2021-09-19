@@ -121,5 +121,66 @@ public class Main {
             }
         }
         System.out.println("========================");
+
+        //36. Valid Sudoku
+        System.out.println("#36 Valid Sudoku");
+        ValidSudoku36 vs36 = new ValidSudoku36();
+        System.out.println("Test value: ");
+        /*char[][] testvs36 = {{'5', '3', '.', '.', '7', '.', '.', '.', '.', },
+                            {'6', '.', '.', '1', '9', '5', '.', '.', '.', },
+                            {'.', '9', '8', '.', '.', '.', '.', '6', '.', },
+                            {'8', '.', '.', '.', '6', '.', '.', '.', '3', },
+                            {'4', '.', '.', '8', '.', '3', '.', '.', '1', },
+                            {'7', '.', '.', '.', '2', '.', '.', '.', '6', },
+                            {'.', '6', '.', '.', '.', '.', '2', '8', '.', },
+                            {'.', '.', '.', '4', '1', '9', '.', '.', '5', },
+                            {'.', '.', '.', '.', '8', '.', '.', '7', '9', }, };*/
+        //Two ones in the top right corner, two threes in the top middle
+        char[][] testvs36 =
+                {{'.', '.', '.', '.', '5', '.', '.', '1', '.', },
+                 {'.', '4', '.', '3', '.', '.', '.', '.', '.', },
+                 {'.', '.', '.', '.', '.', '3', '.', '.', '1', },
+                 {'8', '.', '.', '.', '.', '.', '.', '.', '2', },
+                 {'.', '.', '2', '.', '7', '.', '.', '.', '.', },
+                 {'.', '1', '5', '.', '.', '.', '.', '.', '.', },
+                 {'.', '.', '.', '.', '.', '2', '.', '.', '.', },
+                 {'.', '2', '.', '9', '.', '.', '.', '.', '.', },
+                 {'.', '.', '4', '.', '.', '.', '.', '.', '.', }, };
+        System.out.println("Expected output: true");
+        boolean resultvs36 = vs36.isValidSudoku(testvs36);
+        System.out.println("Received output: " + resultvs36);
+        System.out.println("========================");
+
+        //387. First Unique Character In A String
+        System.out.println("#387 First Unique Character In A String");
+        FirstUniqueCharacterInAString387 fucias387 = new FirstUniqueCharacterInAString387();
+        System.out.println("Test value: leetcode");
+        String testfucias387 = "leetcode";
+        System.out.println("Expected output: 0");
+        int resultfucias387 = fucias387.firstUniqChar(testfucias387);
+        System.out.println("Received output: " + resultfucias387);
+        System.out.println("========================");
+
+        //383. Ransom Note
+        System.out.println("#383 RansomNote");
+        RansomNote383 rn383 = new RansomNote383();
+        System.out.println("Test value: aa, aab");
+        String testrn3831 = "aa";
+        String testrn3832 = "aab";
+        System.out.println("Expected output: true");
+        boolean resultrn383 = rn383.canConstruct(testrn3831, testrn3832);
+        System.out.println("Received output: " + resultrn383);
+        System.out.println("========================");
+
+        //242. Valid Anagram
+        System.out.println("#242 Valid Anagram");
+        ValidAnagram242 va242 = new ValidAnagram242();
+        System.out.println("Test value: aba, baa");
+        String testva2421 = "aba";
+        String testva2422 = "baa";
+        System.out.println("Expected output: true");
+        boolean resultva242 = va242.isAnagram(testva2421, testva2422);
+        System.out.println("Received output: " + resultva242);
+        System.out.println("========================");
     }
 }
