@@ -182,5 +182,76 @@ public class Main {
         boolean resultva242 = va242.isAnagram(testva2421, testva2422);
         System.out.println("Received output: " + resultva242);
         System.out.println("========================");
+
+        //141. Linked List Cycle
+        System.out.println("#141 Linked List Cycle");
+        LinkedListCycle141 llc141 = new LinkedListCycle141();
+        System.out.println("Test value: head = [3,2,0,-4], pos = 1");
+        ListNode testllc1410 = new ListNode(3);
+        ListNode testllc141head = new ListNode(2);
+        ListNode testllc1412 = new ListNode(0);
+        ListNode testllc1413 = new ListNode(-4);
+        testllc1410.next = testllc141head;
+        testllc141head.next = testllc1412;
+        testllc1412.next = testllc1413;
+        System.out.println("Expected output: true");
+        boolean resultllc141 = llc141.hasCycle(testllc141head);
+        System.out.println("Received output: " + resultva242);
+        System.out.println("========================");
+
+        //21. Merge Two Lists
+        System.out.println("#21 Merge Two Lists");
+        MergeTwoLists21 mtl21 = new MergeTwoLists21();
+        System.out.println("Test value: l1 = [1,2,4], l2 = [1,3,4]");
+        ListNode21 mtl21l1a = new ListNode21(1);
+        ListNode21 mtl21l1b = new ListNode21(2);
+        ListNode21 mtl21l1c = new ListNode21(4);
+        ListNode21 mtl21l2a = new ListNode21(1);
+        ListNode21 mtl21l2b = new ListNode21(3);
+        ListNode21 mtl21l2c = new ListNode21(4);
+        mtl21l1a.next = mtl21l1b;
+        mtl21l1b.next = mtl21l1c;
+        mtl21l2a.next = mtl21l2b;
+        mtl21l2b.next = mtl21l2c;
+        System.out.println("Expected output: [1,1,2,3,4,4]");
+        ListNode21 resultmtl21 = mtl21.mergeTwoLists(mtl21l1a, mtl21l2a);
+        System.out.print("Received output: [");
+        while (resultmtl21 != null)
+        {
+            System.out.print(resultmtl21.val + ", ");
+            resultmtl21 = resultmtl21.next;
+        }
+        System.out.println("]");
+
+        System.out.println("========================");
+
+        //203. Remove Linked List Elements
+        System.out.println("#203 Remove Linked List Elements");
+        RemoveLinkedListElements203 rlle203 = new RemoveLinkedListElements203();
+        System.out.println("Test value: head = [1,2,6,3,4,5,6], val = 6");
+        ListNode203 rlle203a = new ListNode203(1);
+        ListNode203 rlle203b = new ListNode203(2);
+        ListNode203 rlle203c = new ListNode203(6);
+        ListNode203 rlle203d = new ListNode203(3);
+        ListNode203 rlle203e = new ListNode203(4);
+        ListNode203 rlle203f = new ListNode203(5);
+        ListNode203 rlle203g = new ListNode203(6);
+        rlle203a.next = rlle203b;
+        rlle203b.next = rlle203c;
+        rlle203c.next = rlle203d;
+        rlle203d.next = rlle203e;
+        rlle203e.next = rlle203f;
+        rlle203f.next = rlle203g;
+        System.out.println("Expected output: [1,2,3,4,5]");
+        ListNode203 resultrlle = rlle203.removeElements(rlle203a, 6);
+        System.out.print("Received output: [");
+        while (resultrlle != null)
+        {
+            System.out.print(resultrlle.val + ", ");
+            resultrlle = resultrlle.next;
+        }
+        System.out.println("]");
+
+        System.out.println("========================");
     }
 }
