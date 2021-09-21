@@ -251,7 +251,54 @@ public class Main {
             resultrlle = resultrlle.next;
         }
         System.out.println("]");
+        System.out.println("========================");
 
+        //206. Reverse Linked List
+        System.out.println("#206 Reverse Linked List");
+        ReverseLinkedList206 rll206 = new ReverseLinkedList206();
+        System.out.println("Test value: head = [1,2,3,4,5]");
+        ListNode206 testrll206a = new ListNode206(1);
+        ListNode206 testrll206b = new ListNode206(2);
+        ListNode206 testrll206c = new ListNode206(3);
+        ListNode206 testrll206d = new ListNode206(4);
+        ListNode206 testrll206e = new ListNode206(5);
+        testrll206a.next = testrll206b;
+        testrll206b.next = testrll206c;
+        testrll206c.next = testrll206d;
+        testrll206d.next = testrll206e;
+        System.out.println("Expected output: [5, 4, 3, 2, 1]");
+        ListNode206 resultrll206 = rll206.reverseList(testrll206a);
+        System.out.print("Received output: [");
+        while (resultrll206 != null)
+        {
+            System.out.print(resultrll206.val + ", ");
+            resultrll206 = resultrll206.next;
+        }
+        System.out.println("]");
+        System.out.println("========================");
+
+        //83. Remove Duplicates From Sorted List
+        System.out.println("#83 Remove Duplicates From Sorted List");
+        RemoveDuplicatesFromSortedList83 rdfsl83 = new RemoveDuplicatesFromSortedList83();
+        System.out.println("Test value: head = [1, 1, 2, 3, 3]");
+        ListNode83 testrdfsl83a = new ListNode83(1);
+        ListNode83 testrdfsl83b = new ListNode83(1);
+        ListNode83 testrdfsl83c = new ListNode83(2);
+        ListNode83 testrdfsl83d = new ListNode83(3);
+        ListNode83 testrdfsl83e = new ListNode83(3);
+        testrdfsl83a.next = testrdfsl83b;
+        testrdfsl83b.next = testrdfsl83c;
+        testrdfsl83c.next = testrdfsl83d;
+        testrdfsl83d.next = testrdfsl83e;
+        System.out.println("Expected output: [1, 2, 3]");
+        ListNode83 resultrdfsl83 = rdfsl83.deleteDuplicates(testrdfsl83a);
+        System.out.print("Received output: [");
+        while (resultrdfsl83 != null)
+        {
+            System.out.print(resultrdfsl83.val + ", ");
+            resultrdfsl83 = resultrdfsl83.next;
+        }
+        System.out.println("]");
         System.out.println("========================");
     }
 }
