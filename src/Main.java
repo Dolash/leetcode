@@ -300,5 +300,30 @@ public class Main {
         }
         System.out.println("]");
         System.out.println("========================");
+
+        //20. Valid Parentheses
+        System.out.println("#20 Valid Parentheses");
+        ValidParentheses20 vp20 = new ValidParentheses20();
+        System.out.println("Test value: ()[]{}");
+        String testvp20 = "()[]{}";
+        System.out.println("Expected output: true");
+        boolean resultvp20 = vp20.isValid(testvp20);
+        System.out.println("Received output: " + resultvp20);
+        System.out.println("========================");
+
+        //232. Implement Queue Using Stacks
+        System.out.println("#232 Implement Queue Using Stacks");
+        ImplementQueueUsingStacks232 iqus232 = new ImplementQueueUsingStacks232();
+        System.out.println("Test value: push [1], push [2], peek, pop, empty");
+        int testiqus232a = 1;
+        int testiqus232b = 2;
+        iqus232.push(testiqus232a);
+        iqus232.push(testiqus232b);
+        System.out.println("Expected output: 1, 1, false");
+        int resultiqus232a = iqus232.peek();
+        int resultiqus232b = iqus232.pop();
+        boolean resultiqus232c = iqus232.empty();
+        System.out.println("Received output: " + resultiqus232a + ", " + resultiqus232b + ", " + resultiqus232c);
+        System.out.println("========================");
     }
 }
