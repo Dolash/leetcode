@@ -325,5 +325,62 @@ public class Main {
         boolean resultiqus232c = iqus232.empty();
         System.out.println("Received output: " + resultiqus232a + ", " + resultiqus232b + ", " + resultiqus232c);
         System.out.println("========================");
+
+        //144. Binary Tree Preorder Traversal
+        System.out.println("#144 Binary Tree Preorder Traversal");
+        BinaryTreePreorderTraversal144 btpt144 = new BinaryTreePreorderTraversal144();
+        System.out.println("Test value: root = [1,null,2,3]");
+        TreeNode144 testbtpt144a = new TreeNode144(1);
+        TreeNode144 testbtpt144b = new TreeNode144(2);
+        TreeNode144 testbtpt144c = new TreeNode144(3);
+        testbtpt144a.right = testbtpt144b;
+        testbtpt144b.left = testbtpt144c;
+        System.out.println("Expected output: [1,2,3]");
+        List<Integer> resultbtpt144 = btpt144.preorderTraversal(testbtpt144a);
+        System.out.print("Received output: [" );
+        for (int i = 0; i < resultbtpt144.size(); i++)
+        {
+            System.out.print(resultbtpt144.get(i) + ", ");
+        }
+        System.out.println("]");
+        System.out.println("========================");
+
+        //94. Binary Tree Inorder Traversal
+        System.out.println("#144 Binary Tree Inorder Traversal");
+        BinaryTreeInorderTraversal94 btit94 = new BinaryTreeInorderTraversal94();
+        System.out.println("Test value: root = [1,null,2,3]");
+        TreeNode94 testbtit94a = new TreeNode94(1);
+        TreeNode94 testbtit94b = new TreeNode94(2);
+        TreeNode94 testbtit94c = new TreeNode94(3);
+        testbtit94a.right = testbtit94b;
+        testbtit94b.left = testbtit94c;
+        System.out.println("Expected output: [1,3,2]");
+        List<Integer> resultbtit94 = btit94.inorderTraversal(testbtit94a);
+        System.out.print("Received output: [" );
+        for (int i = 0; i < resultbtit94.size(); i++)
+        {
+            System.out.print(resultbtit94.get(i) + ", ");
+        }
+        System.out.println("]");
+        System.out.println("========================");
+
+        //145. Binary Tree Postorder Traversal
+        System.out.println("#145 Binary Tree Postorder Traversal");
+        BinaryTreePostorderTraversal145 btpt145 = new BinaryTreePostorderTraversal145();
+        System.out.println("Test value: root = [1,null,2,3]");
+        TreeNode145 testbtpt145a = new TreeNode145(1);
+        TreeNode145 testbtpt145b = new TreeNode145(2);
+        TreeNode145 testbtpt145c = new TreeNode145(3);
+        testbtpt145a.right = testbtpt145b;
+        testbtpt145b.left = testbtpt145c;
+        System.out.println("Expected output: [3, 2, 1]");
+        List<Integer> resultbtpt145 = btpt145.postorderTraversal(testbtpt145a);
+        System.out.print("Received output: [" );
+        for (int i = 0; i < resultbtpt145.size(); i++)
+        {
+            System.out.print(resultbtpt145.get(i) + ", ");
+        }
+        System.out.println("]");
+        System.out.println("========================");
     }
 }
