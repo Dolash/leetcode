@@ -382,5 +382,84 @@ public class Main {
         }
         System.out.println("]");
         System.out.println("========================");
+
+        //102. Binary Tree Level Order Traversal
+        System.out.println("#102 Binary Tree Level Order Traversal");
+        BinaryTreeLevelOrderTraversal102 btlot102 = new BinaryTreeLevelOrderTraversal102();
+        System.out.println("Test value: root = [3,9,20,null,null,15,7]");
+        TreeNode102 testbtlot102a = new TreeNode102(3);
+        TreeNode102 testbtlot102b = new TreeNode102(9);
+        TreeNode102 testbtlot102c = new TreeNode102(20);
+        TreeNode102 testbtlot102d = new TreeNode102(15);
+        TreeNode102 testbtlot102e = new TreeNode102(7);
+        testbtlot102a.left = testbtlot102b;
+        testbtlot102a.right = testbtlot102c;
+        testbtlot102c.left = testbtlot102d;
+        testbtlot102c.right = testbtlot102e;
+        System.out.println("Expected output: [[3],[9,20],[15,7]]");
+        //List<List<Integer>> resultbtlot102 = btlot102.levelOrder(testbtlot102a);
+        System.out.print("Received output: [" );
+        /*for (int i = 0; i < resultbtlot102.size(); i++)
+        {
+            System.out.print("[");
+            for (int j = 0; j < resultbtlot102.get(i).size(); j++)
+            {
+                System.out.print(resultbtlot102.get(i).get(j) + ", ");
+            }
+            System.out.print("], ");
+
+        }*/
+        System.out.println("]");
+        System.out.println("========================");
+
+        //226. Invert Binary Tree
+        System.out.println("#226 Invert Binary Tree");
+        InvertBinaryTree226 ibt226 = new InvertBinaryTree226();
+        System.out.println("Test value: root = [4,2,7,1,3,6,9]");
+        TreeNode226 testibt226a = new TreeNode226(4);
+        TreeNode226 testibt226b = new TreeNode226(2);
+        TreeNode226 testibt226c = new TreeNode226(7);
+        TreeNode226 testibt226d = new TreeNode226(1);
+        TreeNode226 testibt226e = new TreeNode226(3);
+        TreeNode226 testibt226f = new TreeNode226(6);
+        TreeNode226 testibt226g = new TreeNode226(9);
+        testibt226a.left = testibt226b;
+        testibt226a.right = testibt226c;
+        testibt226b.left = testibt226d;
+        testibt226b.right = testibt226e;
+        testibt226c.left = testibt226f;
+        testibt226c.right = testibt226g;
+        System.out.println("Expected output: [4,7,2,9,6,3,1]");
+        TreeNode226 resultibt226 = ibt226.invertTree(testibt226a);
+        System.out.print("Received output: [" );
+        System.out.print(resultibt226.val + ", " + resultibt226.left.val + ", " + resultibt226.right.val + ", " + resultibt226.left.left.val + ", " + resultibt226.left.right.val + ", " + resultibt226.right.left.val + ", " + resultibt226.right.right.val);
+        System.out.println("]");
+        System.out.println("========================");
+
+        //112. PathSum
+        System.out.println("#112 Path Sum");
+        PathSum112 ps112 = new PathSum112();
+        System.out.println("Test value: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22");
+        TreeNode112 testps112a = new TreeNode112(5);
+        TreeNode112 testps112b = new TreeNode112(4);
+        TreeNode112 testps112c = new TreeNode112(8);
+        TreeNode112 testps112d = new TreeNode112(11);
+        TreeNode112 testps112e = new TreeNode112(13);
+        TreeNode112 testps112f = new TreeNode112(4);
+        TreeNode112 testps112g = new TreeNode112(7);
+        TreeNode112 testps112h = new TreeNode112(2);
+        TreeNode112 testps112i = new TreeNode112(1);
+        testps112a.left = testps112b;
+        testps112a.right = testps112c;
+        testps112b.left = testps112d;
+        testps112c.left = testps112e;
+        testps112c.right = testps112f;
+        testps112d.left = testps112g;
+        testps112d.right = testps112h;
+        testps112f.right = testps112i;
+        System.out.println("Expected output: true");
+        boolean resultps112 = ps112.hasPathSum(testps112a, 22);
+        System.out.println("Received output: " + resultps112);
+        System.out.println("========================");
     }
 }
