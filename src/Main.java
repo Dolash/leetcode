@@ -461,5 +461,42 @@ public class Main {
         boolean resultps112 = ps112.hasPathSum(testps112a, 22);
         System.out.println("Received output: " + resultps112);
         System.out.println("========================");
+
+        //700. Search In A Binary Search Tree
+        System.out.println("#700 Search In A Binary Search Tree");
+        SearchInABinarySearchTree700 siabst700 = new SearchInABinarySearchTree700();
+        System.out.println("Test value: root = [4,2,7,1,3], val = 2");
+        TreeNode700 testsiabst700a = new TreeNode700(4);
+        TreeNode700 testsiabst700b = new TreeNode700(2);
+        TreeNode700 testsiabst700c = new TreeNode700(7);
+        TreeNode700 testsiabst700d = new TreeNode700(1);
+        TreeNode700 testsiabst700e = new TreeNode700(3);
+        testsiabst700a.left = testsiabst700b;
+        testsiabst700a.right = testsiabst700c;
+        testsiabst700b.left = testsiabst700d;
+        testsiabst700b.right = testsiabst700e;
+        System.out.println("Expected output: [2, 1, 3]");
+        TreeNode700 resultsiabst700 = siabst700.searchBST(testsiabst700a, 2);
+        System.out.println("Received output: [" + resultsiabst700.val + ", " + resultsiabst700.left.val + ", " + resultsiabst700.right.val + "]");
+        System.out.println("========================");
+
+        //701. Insert Into A Binary Search Tree
+        System.out.println("#701 Insert Into A Binary Search Tree");
+        InsertIntoABinarySearchTree701 iiabst701 = new InsertIntoABinarySearchTree701();
+        System.out.println("Test value: root = [4,2,7,1,3], val = 5");
+        TreeNode701 testiiabst701a = new TreeNode701(4);
+        TreeNode701 testiiabst701b = new TreeNode701(2);
+        TreeNode701 testiiabst701c = new TreeNode701(7);
+        TreeNode701 testsiabst701d = new TreeNode701(1);
+        TreeNode701 testiiabst701e = new TreeNode701(3);
+        testiiabst701a.left = testiiabst701b;
+        testiiabst701a.right = testiiabst701c;
+        testiiabst701b.left = testsiabst701d;
+        testiiabst701b.right = testiiabst701e;
+        System.out.println("Expected output: [4,2,7,1,3,5]");
+        TreeNode701 resultiiabst701 = iiabst701.insertIntoBST(testiiabst701a, 5);
+        System.out.println("Received output: [" + resultiiabst701.val + ", " + resultiiabst701.left.val + ", " + resultiiabst701.right.val + ", " +
+                resultiiabst701.left.left.val + ", " + resultiiabst701.left.right.val + ", " + resultiiabst701.right.left.val + "]");
+        System.out.println("========================");
     }
 }
