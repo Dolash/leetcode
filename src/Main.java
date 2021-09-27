@@ -498,5 +498,69 @@ public class Main {
         System.out.println("Received output: [" + resultiiabst701.val + ", " + resultiiabst701.left.val + ", " + resultiiabst701.right.val + ", " +
                 resultiiabst701.left.left.val + ", " + resultiiabst701.left.right.val + ", " + resultiiabst701.right.left.val + "]");
         System.out.println("========================");
+
+        //98. Validate Binary Search Tree
+        System.out.println("#98 Validate Binary Search Tree");
+        ValidateBinarySearchTree98 vbst98 = new ValidateBinarySearchTree98();
+        System.out.println("Test value: root = [2,1,3]");
+        TreeNode98 testvbst98a = new TreeNode98(2);
+        TreeNode98 testvbst98b = new TreeNode98(1);
+        TreeNode98 testvbst98c = new TreeNode98(3);
+        //TreeNode98 testvbst98d = new TreeNode98(3);
+        TreeNode98 testvbst98e = new TreeNode98(7);
+        testvbst98a.left = testvbst98b;
+        testvbst98a.right = testvbst98c;
+        //testvbst98c.left = testvbst98d;
+        //testvbst98c.right = testvbst98e;
+        System.out.println("Expected output: true");
+        boolean resultvbst98 = vbst98.isValidBST(testvbst98a);
+        System.out.println("Received output: " + resultvbst98);
+        System.out.println("========================");
+
+        //653. Two Sum IV Input Is A BST
+        System.out.println("#653 Two Sum IV Input Is A BST");
+        TwoSumInputIsABST653 tsiiabst653 = new TwoSumInputIsABST653();
+        System.out.println("root = [5,3,6,2,4,null,7], k = 9");
+        TreeNode653 testtsiiabst653a = new TreeNode653(5);
+        TreeNode653 testtsiiabst653b = new TreeNode653(3);
+        TreeNode653 testtsiiabst653c = new TreeNode653(6);
+        TreeNode653 testtsiiabst653d = new TreeNode653(2);
+        TreeNode653 testtsiiabst653e = new TreeNode653(4);
+        TreeNode653 testtsiiabst653f = new TreeNode653(7);
+        testtsiiabst653a.left = testtsiiabst653b;
+        testtsiiabst653a.right = testtsiiabst653b;
+        testtsiiabst653b.left = testtsiiabst653d;
+        testtsiiabst653b.right = testtsiiabst653e;
+        testtsiiabst653c.right = testtsiiabst653f;
+        System.out.println("Expected output: true");
+        boolean resulttsiiabst653 = tsiiabst653.findTarget(testtsiiabst653a, 9);
+        System.out.println("Received output: " + resulttsiiabst653);
+        System.out.println("========================");
+
+        //235. Lowest Common Ancestor Of A Binary Search Tree
+        System.out.println("#235 Lowest Common Ancestor Of A Binary Search Tree");
+        LowestCommonAncestorOfABinarySearchTree235 lcaoabst235 = new LowestCommonAncestorOfABinarySearchTree235();
+        System.out.println("root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8");
+        TreeNode235 testlcaoabst235a = new TreeNode235(6);
+        TreeNode235 testlcaoabst235b = new TreeNode235(2);
+        TreeNode235 testlcaoabst235c = new TreeNode235(8);
+        TreeNode235 testlcaoabst235d = new TreeNode235(0);
+        TreeNode235 testlcaoabst235e = new TreeNode235(4);
+        TreeNode235 testlcaoabst235f = new TreeNode235(7);
+        TreeNode235 testlcaoabst235g = new TreeNode235(9);
+        TreeNode235 testlcaoabst235h = new TreeNode235(3);
+        TreeNode235 testlcaoabst235i = new TreeNode235(5);
+        testlcaoabst235a.left = testlcaoabst235b;
+        testlcaoabst235a.right = testlcaoabst235c;
+        testlcaoabst235b.left = testlcaoabst235d;
+        testlcaoabst235b.right = testlcaoabst235e;
+        testlcaoabst235c.left = testlcaoabst235f;
+        testlcaoabst235c.right = testlcaoabst235g;
+        testlcaoabst235e.left = testlcaoabst235h;
+        testlcaoabst235e.right = testlcaoabst235i;
+        System.out.println("Expected output: 6");
+        TreeNode235 resultlcaoabst235 = lcaoabst235.lowestCommonAncestor(testlcaoabst235a, testlcaoabst235b, testlcaoabst235c);
+        System.out.println("Received output: " + resultlcaoabst235.val);
+        System.out.println("========================");
     }
 }
